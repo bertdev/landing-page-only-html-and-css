@@ -5,6 +5,12 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif; 
 */
 
+:root {
+  --primary-color: #0a1128;
+  --white-color: #FFF;
+  --gap: 3rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +25,8 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,3 +58,23 @@ h6 {
   font-size: 3.5rem;
 }
 
+.main-bg {
+  background-image: url('./../img/main-bg.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color)
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
