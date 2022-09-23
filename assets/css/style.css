@@ -8,7 +8,10 @@ font-family: 'Open Sans', sans-serif;
 :root {
   --primary-color: #0a1128;
   --white-color: #FFF;
+  --light-gray-collor: #EEE;
   --gap: 3rem;
+  --primary-font-family: 'Open Sans', sans-serif;
+  --secondary-font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -24,13 +27,13 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 2rem;
   color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--secondary-font-family);
 }
 
 h1 {
@@ -58,6 +61,10 @@ h6 {
   font-size: 3.5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-bg {
   background-image: url('./../img/main-bg.svg');
   background-size: cover;
@@ -77,4 +84,58 @@ h6 {
 
 .section {
   min-height: 100vh;
+}
+
+.menu {
+  background-color: var(--white-color);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 0.1rem solid var(--light-gray-collor);
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu h1 {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+}
+
+.menu h1 a {
+  color: inherit;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 2rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
 }
