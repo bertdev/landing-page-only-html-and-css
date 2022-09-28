@@ -97,13 +97,17 @@
   justify-content: center;
 }
 
-.intro-text-content h2 {
-  font-size: 6rem;
-  margin-bottom: 6rem;
-  text-transform: uppercase;
-}
-
 .intro-img img{
   max-width: 100%;
   height: auto;
+}
+
+.top3-content {
+  height: 100vh;
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
