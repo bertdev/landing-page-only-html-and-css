@@ -24,6 +24,7 @@
 
 .menu {
   position: fixed;
+  z-index: 1;
   width: 100vw;
   top: 0;
   left: 0;
@@ -50,6 +51,7 @@
 
 .menu ul {
   display: flex;
+  list-style: none;
 }
 
 .menu ul li a {
@@ -73,4 +75,35 @@
 
 .menu ul li a:hover::after {
   width: 100%;
+}
+
+.menu-spacing {
+  height: 6.5rem;
+}
+
+.intro-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  height: 100vh;
+  gap: var(--gap);
+}
+
+.intro-text-content, .intro-img {
+  position: relative;
+  top: -6.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro-text-content h2 {
+  font-size: 6rem;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+}
+
+.intro-img img{
+  max-width: 100%;
+  height: auto;
 }
