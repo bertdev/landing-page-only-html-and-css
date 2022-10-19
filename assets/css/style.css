@@ -172,3 +172,81 @@
   overflow: hidden;
   overflow-x: auto;
 }
+
+.contact-form {
+  grid-column: span 2;
+}
+
+.contact-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.contact-form legend {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  flex: 1 1 32rem;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background-color: var(--white-color);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.form-group ::placeholder {
+  color: var(--light-gray-collor);
+}
+
+div.full-width {
+  flex: 1 1 100%;
+  width: 100%;
+}
+
+.form-group button {
+  border: 0.5rem solid var(--white-color);
+  background: none;
+  color: var(--white-color);
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  border: 0.5rem solid var(--primary-color);
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.footer p {
+  margin: 0;
+  padding: 3rem;
+}
+
+.footer a {
+  color: var(--primary-color);
+}
+
+.heart {
+  color: red;
+}
