@@ -57,3 +57,27 @@ a {
 p {
   margin-bottom: 3rem;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 36rem;
+}
+
+table th, tfoot td {
+  background-color: var(--light-gray-collor);
+}
+
+table td, table th {
+  text-align: left;
+  white-space: nowrap;
+  padding: 0.5rem;
+  border: 0.1rem solid var(--light-gray-collor);
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}

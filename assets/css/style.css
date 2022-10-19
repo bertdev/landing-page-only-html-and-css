@@ -167,3 +167,8 @@
 .gallery-img img:hover {
   transform: rotateZ(10deg) translate(-3%, 3%) scale(1.2);
 }
+
+.responsive-table {
+  overflow: hidden;
+  overflow-x: auto;
+}
