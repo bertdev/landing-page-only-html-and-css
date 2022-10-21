@@ -10,15 +10,18 @@
 </head>
 
 <body>
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label for="close-menu" title="close menu" class="close-menu-label"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
       <h1><a href="#">LOGO</a></h1>
       <nav>
-        <ul>
+        <ul onclick="document.getElementById('close-menu').checked = false;">
           <li><a href="#intro">intro</a></li>
           <li><a href="#top3">top 3</a></li>
           <li><a href="#grid-one">grid-one</a></li>
           <li><a href="#gallery">gallery</a></li>
+          <li><a href="#grid-two">grid-two</a></li>
           <li><a href="#pricing">pricing</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
@@ -93,6 +96,27 @@
         <div class="gallery-img">
           <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image fom unsplash">
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="grid-two" class="main-bg section grid-one">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Top 3 jobs</h2>
+      <p class="grid-description">Uma breve descrição</p>
+      <div class="grid">
+        <article>
+          <h3>Teste</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem sed error sapiente ipsam nihil quis eos distinctio ullam voluptates, ex maiores possimus repudiandae, hic aliquid fugiat dolores numquam? Magni, eligendi?</p>
+        </article>
+        <article>
+          <h3>Teste</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum unde suscipit repudiandae commodi cumque recusandae, nobis labore in rerum ab corrupti itaque voluptate odit aspernatur reprehenderit voluptas, quas eos?</p>
+        </article>
+        <article>
+          <h3>Teste</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi assumenda similique sed cum qui repellendus rerum repudiandae laudantium quis deserunt dolorem provident labore quam dolores eligendi, nobis at, explicabo autem.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -186,6 +210,8 @@
   <footer class="white-bg footer">
     <p>Feito com carinho <span class="heart">&hearts;</span> por <a href="" rel="nofollow" target="_blank">Bert</a></p>
   </footer>
+
+  <a href="#intro" class="back-to-top">&#129053;</a>
 </body>
 
 </html>
